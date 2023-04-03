@@ -21,6 +21,12 @@ html, body {
   
   main {
     flex-grow: 1; /* Allows main content to grow and take up the available space */
+    text-align: left;
+    padding: 5% 25%;
+  }
+
+  .landing {
+    text-align: center;
   }
   
   footer {
@@ -52,5 +58,26 @@ nav {
   
   nav a:hover {
     color: #ccc; /* Lighter color for the hover effect */
+  }
+  
+  figure {
+    margin: 0;
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  
+  .hero-image img {
+    width: 200px; /* Adjust this value to change the size of the image */
+    height: 200px; /* Match the height to the width for a perfect circle */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio and doesn't stretch */
+    border-radius: 50%; /* Set border-radius to 50% for a circular shape */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   }
   
