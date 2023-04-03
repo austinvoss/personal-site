@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  header {
+    flex-shrink: 0; /* Prevents header from resizing when the main content grows */
+  }
+  
+  main {
+    flex-grow: 1; /* Allows main content to grow and take up the available space */
+  }
+  
+  footer {
+    flex-shrink: 0; /* Prevents footer from resizing when the main content grows */
+    text-align: center;
+  }
+
+/* Navigation */
+nav {
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff; /* Change text color to white */
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #ccc; /* Lighter color for the hover effect */
+  }
+  
